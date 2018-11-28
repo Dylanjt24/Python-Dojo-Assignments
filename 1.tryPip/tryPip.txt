@@ -1,0 +1,19 @@
+pip install Django==1.11.9: This command installs version 1.11.9 of Django
+
+pip list: This command lists your installed packages
+
+deactivate: Well like you said, it deactivates the currently activated virtual env
+
+pip3 list: Using this command had less results, where DJango and wheel were not listed. I'm not entirely sure why it differs and couldn't find much info when I googled it.
+
+pip install Django==1.11.9: When running this again it tells me that the requirements are already satisfied because we previously installed Django.
+
+pip freeze: This command output fewer items than list. From what I can tell, pip list ouputs editables as well whereas pip freeze does not. It also looks like pip freeze can be used to put in a requirements file which can then be used to install the same dependencies on a different machine.
+
+pip freeze > requirements.txt: This file contains the same packages that were listed with pip freeze.
+
+pip uninstall Django: Asks if you want to proceed then uninstalls Django if you respond yes.
+
+pip show Django: Shows nothing. Presumably because we just uninstalled Django and there's nothing to show.
+
+pip search Flask: This command searches for packages whose nanme contains 'Flask'.
